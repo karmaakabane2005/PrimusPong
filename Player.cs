@@ -71,11 +71,8 @@ namespace PrimusPong
         {
            Sprite = c.Load<Texture2D>("./TEST_VERSION/46");
         }
-        public override void Update()
-        {
-            
-        }
-        public override void Update(KeyboardState kbState, float dt,ref Scene scene)
+
+        public void Update(KeyboardState kbState, float dt,ref Scene scene)
         {
             if (scene == Scene.pause)
             {
